@@ -19,6 +19,7 @@ import org.bukkit.event.player.PlayerShearEntityEvent;
  */
 public class BaaBaaBlockSheepEvents implements Listener
 {
+	private static final String PERMISSION_PARTYONJOIN = "discosheep.onjoin";
 
 	DiscoSheep parent;
 
@@ -75,12 +76,15 @@ public class BaaBaaBlockSheepEvents implements Listener
 		if(DiscoParty.defaultPartyOnJoin)
 		{
 			Player p = e.getPlayer();
-			boolean fireworks = true;
-			int sheepNumber = DiscoParty.defaultSheep;
-			int radius = DiscoParty.defaultRadius;
-			int duration = DiscoParty.defaultDuration;
-			int period = DiscoParty.defaultPeriod;
-			parent.startParty(p, duration, sheepNumber, radius, period, fireworks);
+			if (p.hasPermission(PERMISSION_PARTYONJOIN ))
+			{
+				boolean fireworks = true;
+				int sheepNumber = DiscoParty.defaultSheep;
+				int radius = DiscoParty.defaultRadius;
+				int duration = DiscoParty.defaultDuration;
+				int period = DiscoParty.defaultPeriod;
+				parent.startParty(p, duration, sheepNumber, radius, period, fireworks);
+			}
 		}
 	}
 }

@@ -23,7 +23,6 @@ import org.bukkit.util.Vector;
  */
 public class DiscoParty
 {
-
 	private DiscoSheep ds;
 	private Player player;
 	private ArrayList<Sheep> sheepList = new ArrayList<Sheep>();
@@ -33,7 +32,7 @@ public class DiscoParty
 	static int defaultRadius = 5;
 	static int defaultSheep = 10;
 	static float defaultSheepJump = 0.5f;
-	static boolean defaultPartyOnJoin = false;
+	static boolean defaultPartyOnJoin = true;
 	static int maxDuration = 2400; // 120 seconds
 	static int maxSheep = 100;
 	static int maxRadius = 100;
