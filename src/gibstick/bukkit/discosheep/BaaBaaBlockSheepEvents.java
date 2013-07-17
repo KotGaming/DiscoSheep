@@ -12,7 +12,7 @@ import org.bukkit.event.player.PlayerQuitEvent;
 import org.bukkit.event.player.PlayerShearEntityEvent;
 
 /**
- *
+ * 
  * @author Mauve
  */
 public class BaaBaaBlockSheepEvents implements Listener {
