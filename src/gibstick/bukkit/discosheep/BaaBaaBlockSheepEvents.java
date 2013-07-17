@@ -13,7 +13,7 @@ import org.bukkit.event.player.PlayerShearEntityEvent;
 
 /**
  * 
- * @author Mauve
+ * @author Niggo
  */
 public class BaaBaaBlockSheepEvents implements Listener {
 
