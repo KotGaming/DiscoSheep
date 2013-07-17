@@ -23,6 +23,7 @@ import org.bukkit.util.Vector;
  */
 public class DiscoParty {
 
+	
 	private DiscoSheep ds;
 	private Player player;
 	private ArrayList<Sheep> sheepList = new ArrayList<Sheep>();
