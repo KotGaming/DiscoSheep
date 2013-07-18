@@ -6,9 +6,35 @@ This is a from-scratch remake of the fabulous DiscoSheep plugin which spawns a d
 
 Download latest build
 --------
-https://github.com/Gibstick/DiscoSheep/raw/master/dist/DiscoSheep.jar (use at your own risk!)
+https://github.com/KotGaming/DiscoSheep/blob/develop/dist/DiscoSheep.jar (use at your own risk!)
 
-###License###
+### Configuration File ###
+(should be self explanatory)
+
+	max:
+		sheep: 100
+		radius: 100
+		duration: 120
+		period-ticks: 40
+	min:
+		period-ticks: 5
+	default:
+		sheep: 10
+		radius: 5
+		duration: 15
+		period-ticks: 10
+		party-on-join: true
+
+### Permission Nodes ###
+
+	discosheep.party - Allows a player to have a party of one
+	discosheep.partyall - Allows a player to call a server-wide party
+	discosheep.stop - Allows a player to stop all parties on the server
+	discosheep.fireworks - Allows a player to enable have parties with fireworks
+	discosheep.reload - Allows a player to reload settings from config.yml
+	discosheep.onjoin - Allows a player to have a party when joining
+
+### License ###
 Copyright (c) 2013 "Gibstick", "RangerMauve"
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
