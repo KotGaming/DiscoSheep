@@ -1,7 +1,7 @@
 name: DiscoSheep
 main: gibstick.bukkit.discosheep.DiscoSheep
 authors: [Gibstick, RangerMauve]
-version: 1.0
+version: 1.1
 commands:
   ds:
     description: "Main DiscoSheep command"
@@ -13,11 +13,15 @@ permissions:
     description: Permission node for all DiscoSheep commands
     default: op
     children:
+      discosheep.onjoin: true
       discosheep.party: true
       discosheep.partyall: true
       discosheep.fireworks: true
       discosheep.stop: true
       discosheep.reload: true
+  discosheep.onjoin:
+    description: Allows a player to have a party when joining
+    default: op
   discosheep.party:
     description: Allows a player to have a party of one
     default: op
