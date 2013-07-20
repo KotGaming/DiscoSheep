@@ -2,16 +2,19 @@ package gibstick.bukkit.discosheep;
 
 import org.bukkit.scheduler.BukkitRunnable;
 
-public class DiscoUpdater extends BukkitRunnable {
+public class DiscoUpdater extends BukkitRunnable
+{
 
 	private DiscoParty parent;
 
-	public DiscoUpdater(DiscoParty parent) {
+	public DiscoUpdater(DiscoParty parent)
+	{
 		this.parent = parent;
 	}
 
 	@Override
-	public void run() {
+	public void run()
+	{
 		parent.update();
 	}
 }
